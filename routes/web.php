@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Resources\Home\layouts;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,44 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home.index');
+Route::get('/home', function () {
+
+    $data = [
+        'content' => 'home/home/index'
+    ];
+    return view('home.layouts.wrapper',$data );
 });
+
+Route::get('/aboutus', function () {
+
+    $data = [
+        'content' => 'home/aboutus/index'
+    ];
+    return view('home.layouts.wrapper',$data );
+});
+
+Route::get('/partnership', function () {
+
+    $data = [
+        'content' => 'home/partnership/index'
+    ];
+    return view('home.layouts.wrapper',$data );
+});
+
+Route::get('/menu', function () {
+
+    $data = [
+        'content' => 'home/menu/index'
+    ];
+    return view('home.layouts.wrapper',$data );
+});
+
+Route::get('/contactus', function () {
+
+    $data = [
+        'content' => 'home/contactus/index'
+    ];
+    return view('home.layouts.wrapper',$data );
+});
+
+

@@ -166,6 +166,7 @@ figure {
 }
 /* 1. header-top */
 .content-header {
+    /* margin-top:1000px; */
     display: flex;
     align-items: center;
 }
@@ -206,17 +207,17 @@ figure {
     padding: 8px 0;
 }
 /* 2. navbar */
-.overlay {
+/* .overlay {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
-  z-index: -1;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 0;
   opacity: 0;
   transition: 1s all;
-}
+} */
 .navbar {
     display: flex;
     align-items: center;
@@ -3946,6 +3947,9 @@ i#nav-icon4 {
 .res-log {
     margin-bottom: 30px;
 }
+
+
+
 .mobile-nav .donation {
     display: flex;
     align-items: center;
@@ -4032,6 +4036,7 @@ header.two .navbar-links li a {
 }
 
 header.two {
+    color: white;
     z-index: 1;
     position: absolute;
     width: 100%;

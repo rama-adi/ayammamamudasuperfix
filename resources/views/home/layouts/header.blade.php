@@ -1,31 +1,4 @@
-<!DOCTYPE html>
-<html lang="zxx">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ayam Mama Muda</title>
-    <link rel="icon" href="resources/img/logo-icon.png">
-    <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-    <!-- fancybox -->
-    <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
-    <!-- Font Awesome 6 -->
-    <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
-    <!-- style -->
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-    <!-- responsive -->
-    <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
-    <!-- color -->
-    <link rel="stylesheet" href="{{ asset('css/color.css') }}">
-    <!-- jQuery -->
-    <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
-    <script src="{{ asset('js/preloader.js') }}"></script>
-</head>
-
-<body>
     {{-- <!-- preloader -->
     <div class="preloader">
         <div class="container">
@@ -35,16 +8,17 @@
         </div>
     </div>
     <!-- end preloader --> --}}
-    <header class="two">
+    <header class="two bg-white  srollable-header" >
         <div class="bottom-bar ">
           <div class="container">
                <div class="row align-items-center">
                   <div class="col-xl-3">
                      <div class="d-flex align-items-center justify-content-between">
                         <div class="logo">
-                           <a href="index.html">
-                              <img alt="logo" src="assets/img/logo.png">
-                           </a>
+                            <a href="index.html">
+                                <img alt="logo" src="{{ asset('img/logomamud-01.png') }}" style="width: 100px; height: 100px;">
+                              </a>
+
                         </div>
                         <div class="d-flex cart-checkout">
                           <a href="cart-checkout.html">
@@ -62,49 +36,38 @@
                   <div class="col-xl-6">
                      <nav class="navbar">
                         <ul class="navbar-links">
-                          <li class="navbar-dropdown">
-                            <a href="#">home</a>
-                            <div class="dropdown">
+                          <li class="navbar-dropdown text-darkm8">
+                            <a class="{{ Request::is('/') ? 'active' : }}"href="/home">Home</a>
+                            {{-- <div class="dropdown">
                               <a href="index.html">home 1</a>
                               <a href="index-2.html">home 2</a>
                               <a href="index-3.html">home 3</a>
-                            </div>
+                            </div> --}}
                           </li>
                           <li class="navbar-dropdown">
-                            <a href="about.html">Menus</a>
-                            <div class="dropdown">
+                            <a href="/aboutus">About Us</a>
+                            {{-- <div class="dropdown">
                               <a href="menu-1.html">Menu 1</a>
                               <a href="menu-2.html">Menu 2</a>
                               <a href="menu-3.html">Menu 3</a>
-                            </div>
+                            </div> --}}
                           </li>
                           <li class="navbar-dropdown">
-                            <a href="#">Shop</a>
-                            <div class="dropdown">
+                            <a href="/menu">Menu</a>
+                            {{-- <div class="dropdown">
                               <a href="shop.html">our product</a>
                               <a href="product-details.html">product details</a>
                               <a href="shop-cart.html">shop cart</a>
                               <a href="cart-checkout.html">cart checkout</a>
-                            </div>
+                            </div> --}}
                           </li>
                           <li class="navbar-dropdown">
-                            <a href="#">News</a>
-                            <div class="dropdown">
-                              <a href="our-blog.html">our blog</a>
-                              <a href="blog-details.html">blog details</a>
-                            </div>
+                            <a href="/partnership">Partnership</a>
+
                           </li>
+
                           <li class="navbar-dropdown">
-                            <a href="#">Pages</a>
-                            <div class="dropdown">
-                              <a href="about.html">about</a>
-                              <a href="our-services.html">our services</a>
-                              <a href="chef-details.html">chef details</a>
-                              <a href="login.html">login</a>
-                            </div>
-                          </li>
-                          <li class="navbar-dropdown">
-                            <a href="contact.html">Contact</a>
+                            <a href="/contactus">Contact</a>
                           </li>
                         </ul>
                       </nav>
@@ -173,13 +136,7 @@
 
                             </div>
 
-                            <div class="cart-btns d-flex align-items-center justify-content-between">
 
-                              <a class="font-bold" href="shop-cart.html">View Cart</a>
-
-                              <a class="font-bold theme-bg-clr text-white checkout" href="cart-checkout.html">Checkout</a>
-
-                            </div>
 
                       </div>
 
@@ -253,4 +210,3 @@
                 <a href="JavaScript:void(0)" id="res-cross"></a>
         </div>
       </header>
-      
