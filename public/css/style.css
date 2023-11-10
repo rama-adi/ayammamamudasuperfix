@@ -4142,7 +4142,11 @@ table.shop_table.table-responsive .coupon {
   filter: url('#goo');
   animation: rotate-move 2s ease-in-out infinite;
 }
-
+.box {
+    border: 1px solid #9d9393;
+    padding: 8px;
+    border-radius: 10px;
+}
 .dot {
   width: 70px;
   height: 70px;

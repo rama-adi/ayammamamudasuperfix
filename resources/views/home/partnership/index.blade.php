@@ -56,6 +56,30 @@
           </div>
        </div>
     </div>
+    <section class="gap">
+        <div class="container">
+           <div class="row">
+            <div class="col-lg-4">
+                <div class="bbq mb-0" style="background-color: #ff3636; padding-bottom: 50px;" >
+                   <h2>Program Kemitraan</h2>
+                   <h4 style="padding-top: 20px;">Mulai dari Rp 50.000.000</h4>
+                   </div>
+                </div>
+              <div class="col-lg-4">
+                 <div class="bbq" style="background-color: #ff3636; padding-bottom: 50px;">
+                    <h2 >Estimated Gross Profit</h2>
+                    <h4 style="padding-top: 20px;">Mulai dari 30 Jt - 30 Jt</h4>
+                 </div>
+              </div>
+              <div class="col-lg-4">
+                 <div class="bbq mb-0" style="background-color: #ff3636; padding-bottom: 50px;">
+                    <h2>Estimated Nett Profit</h2>
+                    <h4 style="padding-top: 20px;">Mulai dari 15 Jt - 15 Jt</h4>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </section>
 <section>
    <div class="container gap">
       <div class="best-solutions">
