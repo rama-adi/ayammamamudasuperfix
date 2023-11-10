@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Foodio - About</title>
-  <link rel="icon" href="assets/img/logo-icon.png">
+  <title>Ayam Mama Muda - About</title>
+
   <!-- CSS only -->
    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -25,34 +25,24 @@
  </head>
 <body>
 
-<section class="banner" style="background-image:url(https://via.placeholder.com/1920x470)">
+<section class="banner" img alt="imgG" src="{{ asset('img/girl.png') }}">
    <div class="container">
       <div class="row align-items-center">
          <div class="col-lg-7">
             <div class="title-area-data">
                <h2>About Us</h2>
-               <p>Ayam Mama Muda adalah konsep F&B terbaru yang menggabungkan konsep resto dan
+               <p style="color: #6d6d6d;">Ayam Mama Muda adalah konsep F&B terbaru yang menggabungkan konsep resto dan
                 content creation untuk tujuan marketing.</p>
             </div>
             <ol class="breadcrumb">
                <li class="breadcrumb-item">
-                 <a href="/home"><i class="fa-solid fa-house"></i> Home</a>
-               </li>
+                 <a href="/home"> Home</a>
+
             </ol>
          </div>
          <div class="col-lg-5">
-            <div class="row">
-               <div class="col-6">
-                  <div class="title-area-img">
-                     <img alt="title-area-img" src="https://via.placeholder.com/230x376">
-                     <img alt="pata" class="pata" src="assets/img/pata.png">
-                  </div>
-               </div>
-               <div class="col-6">
-                  <div class="title-area-img two">
-                     <img alt="title-area-img" src="https://via.placeholder.com/230x376">
-                  </div>
-               </div>
+                <div class="row">
+                    <img alt="img" src="{{ asset('img/girl.png') }}">
             </div>
          </div>
       </div>
@@ -64,13 +54,13 @@
          <div class="col-xl-12">
             <div class="heading">
                <span>Kemitraan Ayam Hits</span>
-               <h2>Konsep F&B yang Menggabungkan Resto & Content Creation</h2>
+               <h2 style="color: #231a2e;">Konsep F&B yang Menggabungkan Resto & Content Creation</h2>
             </div>
             <div class="Container F&B">
                 <div class="row align-items-center">
 
                       <div class="Container F&B">
-                         <p>Content creation yang dimaksud adalah sebuah mini series yang akan ditayangkan melalui
+                         <p style="color: #6d6d6d;">Content creation yang dimaksud adalah sebuah mini series yang akan ditayangkan melalui
                             social media seputar drama di Ayam Mama Muda.</p>
 
          </div>
@@ -86,8 +76,7 @@
       <div class="row">
          <div class="col-xl-6">
             <div class="history-text">
-               <img alt="business-person.png" src="https://via.placeholder.com/300x184">
-               <span>2023</span>
+                <img alt="imgP" src="{{ asset('img/businessperson.png') }}" style="width: 110px; height: 110px; object-fit: fill; object-position: center center;">
                <div>
                   <a href="#"><h3>Berdiri</h3></a>
                   <p>Ayam Mama Muda didirikan pada Januari tahun 2023 </p>
@@ -96,10 +85,10 @@
          </div>
          <div class="col-xl-6">
             <div class="history-text">
-               <img alt="history-img" src="https://via.placeholder.com/300x184">
+                <img alt="imgOfc" src="{{ asset('img/office.png') }}" style="width: 120px; height: 120px; object-fit: cover; object-position: center center;">
                <div>
                   <a href="#"><h3>Total Outlet</h3></a>
-                  <p>>1</p>
+                  <p style="font-weight: bold">>1</p>
                </div>
             </div>
          </div>
