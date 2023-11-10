@@ -37,7 +37,7 @@
                      <nav class="navbar">
                         <ul class="navbar-links">
                           <li class="navbar-dropdown text-darkm8">
-                            <a class="{{ Request::is('/') ? 'active' : }}"href="/home">Home</a>
+                            <a class="{{ Request::is('/') ? 'active' : '' }}"href="/home">Home</a>
                             {{-- <div class="dropdown">
                               <a href="index.html">home 1</a>
                               <a href="index-2.html">home 2</a>
@@ -54,6 +54,7 @@
                           </li>
                           <li class="navbar-dropdown">
                             <a href="/menu">Menu</a>
+                            
                             {{-- <div class="dropdown">
                               <a href="shop.html">our product</a>
                               <a href="product-details.html">product details</a>
