@@ -4,24 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ayam Mama Muda - About</title>
-
-  <!-- CSS only -->
-   <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
-   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-   <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
-   <!-- fancybox -->
-   <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
-   <!-- Font Awesome 6 -->
-   <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-   <!-- style -->
-   <link rel="stylesheet" href="assets/css/style.css">
-   <!-- responsive -->
-   <link rel="stylesheet" href="assets/css/responsive.css">
-   <!-- color -->
-   <link rel="stylesheet" href="assets/css/color.css">
-    <!-- jQuery -->
-   <script src="assets/js/jquery-3.6.0.min.js"></script>
-   <script src="assets/js/preloader.js"></script>
  </head>
 <body>
 
@@ -36,7 +18,7 @@
             </div>
             <ol class="breadcrumb">
                <li class="breadcrumb-item">
-                 <a href="/home"> Home</a>
+                 <a href="/contactus"> Contact Us</a>
 
             </ol>
          </div>

@@ -4012,6 +4012,11 @@ li.menu-item-has-children.active {
     background-color: transparent;
     font-size: 24px;
 }
+.checklist-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
 .responsive-bar-slider {
     display: flex;
     align-items: center;
