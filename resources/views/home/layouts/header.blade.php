@@ -54,7 +54,7 @@
                           </li>
                           <li class="navbar-dropdown">
                             <a href="/menu">Menu</a>
-                            
+
                             {{-- <div class="dropdown">
                               <a href="shop.html">our product</a>
                               <a href="product-details.html">product details</a>
