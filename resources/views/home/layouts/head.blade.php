@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
     <!-- fancybox -->
     <link rel="stylesheet" href="{{ asset('css/jquery.fancybox.min.css') }}">
     <!-- Font Awesome 6 -->
@@ -23,6 +24,8 @@
     <!-- jQuery -->
     <script src="{{ asset('js/jquery-3.6.0.min.js') }}"></script>
     <script src="{{ asset('js/preloader.js') }}"></script>
+
+    <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 </head>
 
 <body>

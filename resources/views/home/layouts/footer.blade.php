@@ -105,10 +105,11 @@
     <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
 </div>
 <!-- Bootstrap Js -->
-<script src="resources/js/bootstrap.min.js"></script>
-<script src="resources/js/owl.carousel.min.js"></script>
+<script src="{{ asset('js/bootstrap.min.js') }}"></script>
+<script src="{{ asset('js/owl.carousel.min.js') }}"></script>
 <!-- fancybox -->
-<script src="resources/js/jquery.fancybox.min.js"></script>
-<script src="resources/js/custom.js"></script>
+<script src="{{ asset('/js/jquery.fancybox.min.js') }}"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
 </body>
+
 

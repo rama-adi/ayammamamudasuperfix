@@ -1,7 +1,7 @@
 </header>
 <section class="featured-arae-three gap" style="{background-image:url({{ asset('img/blackpatron.jpg') }})}">
    <div class="container">
-      <div class="row three-slider owl-carousel owl-theme">
+      <div class="row ">
          <div class="col-xl-12 item">
             <div class="row align-items-center">
                <div class="col-xl-6">
@@ -190,10 +190,10 @@
                      <svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m408.5 95.005h-25v-60.014c0-11.197-5.417-21.799-14.49-28.36s-20.839-8.386-31.473-4.878l-245.001 80.806c-14.377 4.743-24.036 18.101-24.036 33.239v279.536 81.666c0 19.299 15.701 35 35 35h305c19.299 0 35-15.701 35-35v-346.995c0-19.298-15.701-35-35-35zm5 381.995c0 2.757-2.243 5-5 5h-305c-2.757 0-5-2.243-5-5v-96.665-250.33c0-2.757 2.243-5 5-5h305c2.757 0 5 2.243 5 5zm-66.566-446.757c2.112-.696 3.723.138 4.497.697.773.559 2.07 1.828 2.07 4.051v60.015h-202.923z"/><path d="m156 298.481h18.182 181.818c8.284 0 15-6.716 15-15s-6.716-15-15-15h-4.345c-6.466-41.398-39.257-74.189-80.655-80.655v-7.516c0-8.284-6.716-15-15-15s-15 6.716-15 15v7.516c-41.398 6.466-74.189 39.257-80.655 80.655h-4.345c-8.284 0-15 6.716-15 15s6.716 15 15 15zm100-81.818c31.688 0 58.294 22.174 65.121 51.818h-130.242c6.827-29.644 33.434-51.818 65.121-51.818z"/><path d="m161.817 339.005c-8.284 0-15 6.716-15 15s6.716 15 15 15h72c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/><path d="m352.25 399.005h-192.5c-8.284 0-15 6.716-15 15s6.716 15 15 15h192.5c8.284 0 15-6.716 15-15s-6.716-15-15-15z"/></svg>
                   </i>
                   <h4 style="color: #231a2e;">Explore Menu</h4>
-                  <p style="color: #231a2e;">A range of powerful tools for viewing, querying and filtering your data.</p>
+                  <p style="color: #231a2e;">Eksplor dan pilih sesuai selera anda dari banyak menu yang kami sediakan</p>
                </div>
                <div class="easy-orded">
-                  <sup style="color: #231a2e;">2</sup>
+                  <sup style="color: ">2</sup>
                   <i>
                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512" height="512">
                      <g>
@@ -209,25 +209,25 @@
                      </g>
                      </svg>
                   </i>
-                  <h4 style="color: #231a2e;">Choose a Dish</h4>
-                  <p style="color: #231a2e;">A range of powerful tools for viewing, querying and filtering your data.</p>
+                  <h4 style="color: #231a2e;">Pilih menu</h4>
+                  <p style="color: #231a2e;">Setelah menentukan selera anda bisa memilih jumlah menu yang diorder</p>
                </div>
                <div class="easy-orded">
-                  <sup style="color: #231a2e;">3</sup>
+                  <sup style="color:">3</sup>
                   <i>
                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="512" height="512"><g><path d="M61.707,34.293,49.293,21.879A2.978,2.978,0,0,0,47.171,21H30v2h5V38h2V23H47.171a1,1,0,0,1,.708.293L49.586,25H45a2,2,0,0,0-2,2v9a2,2,0,0,0,2,2H60v8a1,1,0,0,1-1,1H56.92a6.991,6.991,0,0,0-13.84,0H28.92a6.991,6.991,0,0,0-13.84,0H13a1,1,0,0,1-1-1V37H10v9a3,3,0,0,0,3,3h2.08a6.978,6.978,0,0,0,2.031,4H2v2H50a7.006,7.006,0,0,0,6.92-6H59a3,3,0,0,0,3-3V35A1,1,0,0,0,61.707,34.293ZM17,48a5,5,0,1,1,5,5A5.006,5.006,0,0,1,17,48Zm9.889,5a6.978,6.978,0,0,0,2.031-4H43.08a6.978,6.978,0,0,0,2.031,4ZM50,53a5,5,0,1,1,5-5A5.006,5.006,0,0,1,50,53ZM45,36V27h6.586L60,35.414V36Z"/><rect x="21" y="47" width="2" height="2"/><rect x="49" y="47" width="2" height="2"/><rect x="2" y="44" width="5" height="2"/><rect x="4" y="40" width="3" height="2"/><rect x="5" y="36" width="2" height="2"/><path d="M15,35A13,13,0,1,0,2,22,13.015,13.015,0,0,0,15,35Zm0-24A11,11,0,1,1,4,22,11.013,11.013,0,0,1,15,11Z"/><path d="M15,31a1,1,0,0,0,.707-.293C16.351,30.063,22,24.29,22,20A7,7,0,0,0,8,20c0,4.29,5.649,10.063,6.293,10.707A1,1,0,0,0,15,31Zm0-16a5.006,5.006,0,0,1,5,5c0,2.566-3.147,6.531-5,8.551-1.853-2.02-5-5.985-5-8.551A5.006,5.006,0,0,1,15,15Z"/><path d="M18,20a3,3,0,1,0-3,3A3,3,0,0,0,18,20Zm-4,0a1,1,0,1,1,1,1A1,1,0,0,1,14,20Z"/><rect x="40" y="40" width="4" height="2"/></g></svg>
                   </i>
-                  <h4 style="color: #231a2e;">Place Order</h4>
-                  <p style="color: #231a2e;">A range of powerful tools for viewing, querying and filtering your data.</p>
+                  <h4 style="color: #231a2e;">Melakukan pemesanan</h4>
+                  <p style="color: #231a2e;">Lakukan pesanan baik via offline/Whatsapp ataupun Grabfood/Gofood</p>
                </div>
             </div>
          </div>
          <div class="col-xl-5">
             <div class="easy-orded-video">
-               <img alt="arrow" class="arrow" src="assets/img/arrow-2.png">
-               <span>Watch and Follow</span>
-               <img alt="easy-orded" src="https://via.placeholder.com/450x450">
-               <a data-fancybox="" href="https://www.youtube.com/watch?v=1La4QzGeaaQ"><i>
+               {{-- <img alt="arrow" class="arrow" src="assets/img/arrow-2.png"> --}}
+               {{-- <span>Watch and Follow</span> --}}
+               <img alt="easy-orded" src="{{ asset('img/menuimagehome.jpg') }}">
+               {{-- <a data-fancybox="" href="https://www.youtube.com/watch?v=1La4QzGeaaQ"><i> --}}
                <svg width="15" height="22" viewBox="0 0 11 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                <path d="M11 8.5L0.5 0.272758L0.5 16.7272L11 8.5Z" fill="#000"/>
                </svg></i></a>
