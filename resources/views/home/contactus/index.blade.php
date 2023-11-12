@@ -17,7 +17,7 @@
              </ol>
           </div>
           <div class="col-lg-5">
-                 <div class="row">
+                 <div class="rowapa">
                      <img alt="img" src="{{ asset('img/mamamuda.png') }}">
              </div>
           </div>
