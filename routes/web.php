@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\TypeController;
+use App\Http\Controllers\TypeMenuController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Resources\Home\layouts;
 /*
@@ -37,13 +39,17 @@ Route::get('/partnership', function () {
     return view('home.layouts.wrapper',$data );
 });
 
-Route::get('/menu', function () {
+// Route::get('/menu', function () {
 
-    $data = [
-        'content' => 'home/menu/index'
-    ];
-    return view('home.layouts.wrapper',$data );
-});
+//     $data = [
+//         'content' => 'home/menu/index'
+//     ];
+//     return view('home.layouts.wrapper',$data );
+// });
+
+Route::get('/menu', [TypeController::class,'index']);
+Route::get('/menu/{menu}', [TypeMenuController::class,'show'])->name('menu.show');
+
 
 Route::get('/contactus', function () {
 
