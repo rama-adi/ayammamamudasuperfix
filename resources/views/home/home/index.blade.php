@@ -11,7 +11,7 @@
 
                      <p style="color: #6d6d6d;">Makanan enak mulai dari bahan yang berkualitas, Kami hanya memberikan kualitas terbaik</p>
                      <div class="d-flex align-items-center justify-content-xl-start justify-content-center">
-                        <a href="menu-1.html" class="button">View Our Menu</a>
+                        <a href="/menu" class="button">View Our Menu</a>
 
                      </div>
                   </div>

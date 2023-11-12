@@ -1,33 +1,27 @@
-<!DOCTYPE html>
-<html lang="zxx">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ayam Mama Muda - Partnership</title>
-  <link rel="icon" href="assets/img/logo-icon.png">
+<section class="banner" img alt="imgG" src="{{ asset('img/bannerimg.png') }}">
+    <div class="container">
+       <div class="row align-items-center">
+          <div class="col-lg-7">
+             <div class="title-area-data">
+                <h2>Partnership</h2>
+                <p style="color: #6d6d6d;">Ayam Mama Muda adalah konsep F&B terbaru yang menggabungkan konsep resto dan
+                 content creation untuk tujuan marketing.</p>
+             </div>
+             <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="/partnership">partnership</a>
 
- </head>
-<body>
+             </ol>
+          </div>
+          <div class="col-lg-5">
+                 <div class="row">
+                     <img alt="img" src="{{ asset('img/mamamuda.png') }}">
+             </div>
+          </div>
+       </div>
+    </div>
+ </section>
 
-<section class="banner" style="background-image:url({{ asset('img/bannerimg.png') }})">
-   <div class="container">
-      <div class="row align-items-center">
-         <div class="col-lg-7">
-            <div class="title-area-data">
-
-         </div>
-         <div class="col-lg-5">
-            <div class="row">
-               <div class="col-6">
-                  <div class="title-area-img two">
-
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</section>
 <section>
     <div class="container">
        <div class="benefits">
