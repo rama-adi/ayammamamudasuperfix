@@ -143,7 +143,7 @@
                       </div>
 
                     </div>
-                           <a href="contact.html" class="button">Reserve a Table</a>
+                           <a href="contact.html" class="button">Contact Us</a>
                      </div>
                   </div>
                </div>
