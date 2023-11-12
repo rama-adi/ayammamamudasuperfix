@@ -11,9 +11,9 @@
                 <li class="breadcrumb-item">
                   <a href="/contactus">Contact Us</a>
 
-<<<<<<< Updated upstream
+
 </body>
-=======
+
              </ol>
           </div>
           <div class="col-lg-5">
@@ -105,4 +105,4 @@
        </div>
     </div>
  </section>
->>>>>>> Stashed changes
+
