@@ -6,7 +6,7 @@
           <div class="col-xl-4 col-md-6">
              <div class="featured-dishes">
                 <div class="featured-dishes-img">
-                   <img alt="featured-dishes" src="https://via.placeholder.com/323x323">
+                   <img alt="featured-dishes" src="{{ asset($type->fotomenu) }}">
                 </div>
                 <ul class="star">
                    <li><i class="fa-solid fa-star"></i></li>
