@@ -28,12 +28,12 @@
           <div class="line"></div>
        </div>
        <div class="choosecategory owl-carousel owl-theme">
-        @foreach ($types as $type)
-
+        @foreach($types as $type)
         <div class="item">
             <div class="category-choose">
                <div class="category-choose-img">
-                  <img alt="Category" src="https://via.placeholder.com/299x175">
+                  <img alt="Category" src="{{ asset($type->foto) }}">
+                  {{-- {{ asset($type->foto) }} --}}
                </div>
                <a href="{{ route('menu.show', $type->id) }}"><h3>{{ $type->nama }}</h3></a>
                <span>12 Dishes in the Menu</span>
