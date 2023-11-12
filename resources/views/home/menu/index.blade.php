@@ -14,8 +14,8 @@
              </ol>
           </div>
           <div class="col-lg-5">
-                 <div class="row">
-                     <img alt="img" src="{{ asset('img/mamamuda.png') }}">
+                 <div class="rowimage">
+                     <img alt="imgmoi" src="{{ asset('img/mamamuda.png') }}">
              </div>
           </div>
        </div>
@@ -86,16 +86,16 @@
              <div class="row align-items-center">
                 <div class="col-lg-6">
                    <div class="watch-video-img">
-                      <img alt="img" src="https://via.placeholder.com/254x254">
+                      <img alt="imgG" src="{{ asset('img/mamahot.png') }}">
                    </div>
                    <div class="watch-video-img two">
-                      <img alt="img" src="https://via.placeholder.com/254x254">
+                      <img alt="imgG" src="{{ asset('img/mamajepang.png') }}">
                    </div>
                 </div>
                 <div class="col-lg-6">
                    <div class="watch-video-img">
-                      <img alt="img" src="https://via.placeholder.com/254x254">
-                      
+                      <img alt="imgG" src="{{ asset('img/mamacentil.png') }}">
+
                    </div>
                 </div>
              </div>
