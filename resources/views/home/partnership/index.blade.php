@@ -9,25 +9,18 @@
  </head>
 <body>
 
-<section class="banner" style="background-image:url(https://via.placeholder.com/1920x470)">
+<section class="banner" style="background-image:url({{ asset('img/bannerimg.png') }})">
    <div class="container">
       <div class="row align-items-center">
          <div class="col-lg-7">
             <div class="title-area-data">
-               <h2>Partnership</h2>
-               <p>BRIDGET CAHYADI</p>
-            </div>
-            <ol class="breadcrumb">
-               <li class="breadcrumb-item">
-                 <a href="/contactus">Contact Us</a>
-               </li>
-            </ol>
+
          </div>
          <div class="col-lg-5">
             <div class="row">
                <div class="col-6">
                   <div class="title-area-img two">
-                     <img alt="title-area-img" src="https://via.placeholder.com/230x376">
+
                   </div>
                </div>
             </div>

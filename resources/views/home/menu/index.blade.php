@@ -1,5 +1,5 @@
 </header>
-<section class="banner" style="background-image:url({{ asset('img/bannerimg.png') }})">
+<section class="banner2" style="background-image:url({{ asset('img/bannerimg.png') }})">
    <div class="container">
       <div class="row align-items-center">
          <div class="col-lg-7">

@@ -58,7 +58,7 @@
       <div class="row">
          <div class="col-xl-6">
             <div class="history-text">
-                <img alt="imgP" src="{{ asset('img/businessperson.png') }}" style="width: 110px; height: 110px; object-fit: fill; object-position: center center;">
+                <img alt="imgP" src="{{ asset('img/businessperson.png') }}" style="width: 70px; height: 70px; object-fit: fill; object-position: center center;">
                <div>
                   <a href="#"><h3>Berdiri</h3></a>
                   <p>Ayam Mama Muda didirikan pada Januari tahun 2023 </p>
@@ -67,7 +67,7 @@
          </div>
          <div class="col-xl-6">
             <div class="history-text">
-                <img alt="imgOfc" src="{{ asset('img/office.png') }}" style="width: 120px; height: 120px; object-fit: cover; object-position: center center;">
+                <img alt="imgOfc" src="{{ asset('img/office.png') }}" style="width: 70px; height: 70px; object-fit: cover; object-position: center center;">
                <div>
                   <a href="#"><h3>Total Outlet</h3></a>
                   <p style="font-weight: bold">>1</p>
