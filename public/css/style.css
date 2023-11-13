@@ -4323,8 +4323,13 @@ button.swal-button.swal-button--confirm {
         font-size: 40px;
     }
 
-    h2 {
+    .category-choose-img:before {
+        max-width: 40%;
+    }
+
+    h2{
         font-size: 40px;
+        margin-top: 80px;
     }
 
     h3 {
@@ -4423,12 +4428,7 @@ button.swal-button.swal-button--confirm {
         margin-left: 10px;
         font-size: 16px;
     }
-}
 
-    h2{
-        font-size: 40px;
-        margin-top: 85px;
-    }
     .bbr-price {
         width: 100px;
         height: 100px;
@@ -4463,9 +4463,6 @@ button.swal-button.swal-button--confirm {
         max-width: 20%;;
     }
 
-    .category-choose-img:before {
-        max-width: 40%;
-    }
     .reserve-table {
         padding: 40px;
     }
@@ -4564,3 +4561,6 @@ button.swal-button.swal-button--confirm {
         .year-experience {
             width: 32%;
         }
+}
+
+
