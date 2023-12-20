@@ -15,29 +15,10 @@ use Illuminate\Resources\Home\layouts;
 |
 */
 
-Route::get('/home', function () {
-
-    $data = [
-        'content' => 'home/home/index'
-    ];
-    return view('home.layouts.wrapper',$data );
-});
-
-Route::get('/aboutus', function () {
-
-    $data = [
-        'content' => 'home/aboutus/index'
-    ];
-    return view('home.layouts.wrapper',$data );
-});
-
-Route::get('/partnership', function () {
-
-    $data = [
-        'content' => 'home/partnership/index'
-    ];
-    return view('home.layouts.wrapper',$data );
-});
+Route::view('/', 'homepage');
+Route::view('/about-us', 'about-us');
+Route::view('/partnership', 'partnership');
+Route::view('/contact-us', 'contact-us');
 
 // Route::get('/menu', function () {
 
@@ -50,13 +31,5 @@ Route::get('/partnership', function () {
 Route::get('/menu', [TypeController::class,'index']);
 Route::get('/menu/{menu}', [TypeMenuController::class,'show'])->name('menu.show');
 
-
-Route::get('/contactus', function () {
-
-    $data = [
-        'content' => 'home/contactus/index'
-    ];
-    return view('home.layouts.wrapper',$data );
-});
 
 
