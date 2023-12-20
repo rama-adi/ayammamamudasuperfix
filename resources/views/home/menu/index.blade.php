@@ -95,7 +95,6 @@
                 <div class="col-lg-6">
                    <div class="watch-video-img">
                       <img alt="imgG" src="{{ asset('img/mamacentil.png') }}">
-
                    </div>
                 </div>
              </div>

@@ -82,7 +82,7 @@
                     <nav class="navbar">
                         <ul class="navbar-links">
                             <li class="navbar-dropdown text-darkm8">
-                                <a class="{{ Request::is('/') ? 'active' : '' }}" href="/home">Home</a>
+                                <a class="{{ Request::routeIs('homepage') ? 'active' : '' }}" href="{{route('homepage')}}">Home</a>
                                 {{-- <div class="dropdown">
                                   <a href="index.html">home 1</a>
                                   <a href="index-2.html">home 2</a>
@@ -90,7 +90,7 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a href="/aboutus">About Us</a>
+                                <a class="{{ Request::routeIs('about-us') ? 'active' : '' }}" href="{{route('about-us')}}">About Us</a>
                                 {{-- <div class="dropdown">
                                   <a href="menu-1.html">Menu 1</a>
                                   <a href="menu-2.html">Menu 2</a>
@@ -98,7 +98,7 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a href="/menu">Menu</a>
+                                <a class="{{ Request::routeIs('menu.index') ? 'active' : '' }}" href="{{route('menu.index')}}">Menu</a>
 
                                 {{-- <div class="dropdown">
                                   <a href="shop.html">our product</a>
@@ -108,12 +108,12 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a href="/partnership">Partnership</a>
+                                <a class="{{ Request::routeIs('partnership') ? 'active' : '' }}" href="{{route('partnership')}}">Partnership</a>
 
                             </li>
 
                             <li class="navbar-dropdown">
-                                <a href="/contactus">Contact</a>
+                                <a class="{{ Request::routeIs('contact-us') ? 'active' : '' }}" href="{{route('contact-us')}}">Contact</a>
                             </li>
                         </ul>
                     </nav>

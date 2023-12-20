@@ -15,10 +15,10 @@ use Illuminate\Resources\Home\layouts;
 |
 */
 
-Route::view('/', 'homepage');
-Route::view('/about-us', 'about-us');
-Route::view('/partnership', 'partnership');
-Route::view('/contact-us', 'contact-us');
+Route::view('/', 'homepage')->name('homepage');
+Route::view('/about-us', 'about-us')->name('about-us');
+Route::view('/partnership', 'partnership')->name('partnership');
+Route::view('/contact-us', 'contact-us')->name('contact-us');
 
 // Route::get('/menu', function () {
 
@@ -28,7 +28,7 @@ Route::view('/contact-us', 'contact-us');
 //     return view('home.layouts.wrapper',$data );
 // });
 
-Route::get('/menu', [TypeController::class,'index']);
+Route::view('/menu', 'menu.index')->name('menu.index');
 Route::get('/menu/{menu}', [TypeMenuController::class,'show'])->name('menu.show');
 
 
