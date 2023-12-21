@@ -51,7 +51,15 @@ class PaymentResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('id')
+                    ->sortable()
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('order_id'),
+                Tables\Columns\TextColumn::make('amount')
+                    ->money('IDR')
+                    ->sortable(),
+                Tables\Columns\TextColumn::make('status')
+                    ->badge()
             ])
             ->filters([
                 //
