@@ -34,12 +34,8 @@
                 @foreach(\App\Models\Category::all() as $category)
                     <div class="item">
                         <div class="category-choose">
-                            <div class="category-choose-img">
-                                {{--                                <img alt="Category" src="{{ asset($type->foto) }}">--}}
-                                {{-- {{ asset($type->foto) }} --}}
-                            </div>
-                            <a href="#"><h3>{{ $category->name }}</h3></a>
-                            <span>{{ $category->menus()->count() }} Menu di kategori ini</span>
+                            <a href="{{route('menu.show', $category)}}"><h3>{{ $category->name }}</h3></a>
+                            <span>{{$category->menus->count()}} Menu di kategori ini</span>
                         </div>
                     </div>
                 @endforeach

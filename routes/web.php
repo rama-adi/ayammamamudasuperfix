@@ -1,9 +1,5 @@
 <?php
 
-use App\Http\Controllers\TypeController;
-use App\Http\Controllers\TypeMenuController;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Resources\Home\layouts;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,21 +11,21 @@ use Illuminate\Resources\Home\layouts;
 |
 */
 
+use App\Http\Controllers\MenuController;
+
 Route::view('/', 'homepage')->name('homepage');
 Route::view('/about-us', 'about-us')->name('about-us');
 Route::view('/partnership', 'partnership')->name('partnership');
 Route::view('/contact-us', 'contact-us')->name('contact-us');
 
-// Route::get('/menu', function () {
+Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'show'])
+    ->middleware('auth')
+    ->name('checkout');
 
-//     $data = [
-//         'content' => 'home/menu/index'
-//     ];
-//     return view('home.layouts.wrapper',$data );
-// });
+Route::post('/checkout', [\App\Http\Controllers\CheckoutController::class, 'submit'])
+    ->middleware('auth')
+    ->name('checkout.submit');
 
-Route::view('/menu', 'menu.index')->name('menu.index');
-Route::get('/menu/{menu}', [TypeMenuController::class,'show'])->name('menu.show');
-
-
-
+Route::get('/menu', [MenuController::class, 'index'])->name('menu.index');
+Route::get('/category/{category}', [MenuController::class, 'show'])->name('menu.show');
+Route::get('/menu/{menu}', [MenuController::class, 'detail'])->name('menu.detail');

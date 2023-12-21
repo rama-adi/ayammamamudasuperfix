@@ -27,8 +27,24 @@ class PaymentResource extends Resource
     {
         return $form
             ->schema([
-                //
-            ]);
+                Forms\Components\TextInput::make('amount')
+                    ->label('Jumlah Pembayaran')
+                    ->disabled(),
+                Forms\Components\FileUpload::make('image')
+                    ->label('Bukti Pembayaran')
+                    ->image(),
+                Forms\Components\Textarea::make('notes')
+                    ->label('Catatan'),
+                Forms\Components\Select::make('status')
+                    ->label('Status Pembayaran')
+                    ->options([
+                        'not_added' => 'Belum Ditambahkan',
+                        'unverified' => 'Belum Diverifikasi',
+                        'verified' => 'Terverifikasi',
+                        'declined' => 'Ditolak',
+                    ])
+                    ->default('not_added'),
+            ])->columns(1);
     }
 
     public static function table(Table $table): Table

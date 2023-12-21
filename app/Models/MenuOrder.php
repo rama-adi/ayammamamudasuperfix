@@ -10,6 +10,8 @@ class MenuOrder extends Model
 {
     use HasFactory;
 
+    protected $guarded = [];
+
     public function menu(): BelongsTo
     {
         return $this->belongsTo(Menu::class);

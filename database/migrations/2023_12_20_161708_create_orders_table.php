@@ -16,7 +16,6 @@ return new class extends Migration {
             $table->id();
             $table->foreignIdFor(User::class);
             $table->enum('status', ['unpaid', 'pending', 'delivered', 'finish']);
-            $table->foreignIdFor(Payment::class);
             $table->timestamps();
         });
     }

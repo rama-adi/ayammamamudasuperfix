@@ -27,12 +27,28 @@ class OrderResource extends Resource
             ->schema([
                 Forms\Components\Select::make('user_id')
                     ->relationship('user', 'name'),
+
                 Forms\Components\Select::make('status')
                     ->options([
                         'unpaid' => 'Belum Bayar',
                         'pending' => 'Sedang diproses',
                         'delivered' => 'Dikirim',
                         'finish' => 'Selesai',
+                    ]),
+
+                Forms\Components\Repeater::make('menuOrders')
+                    ->label('Pesanan')
+                    ->relationship('menuOrders')
+                    ->disabled()
+                    ->schema([
+                        Forms\Components\Grid::make(2)
+                            ->schema([
+                                Forms\Components\Select::make('menu_id')
+                                    ->relationship('menu', 'name'),
+                                Forms\Components\TextInput::make('quantity')
+                                    ->label('Jumlah')
+                                    ->numeric(),
+                            ])
                     ]),
             ])
             ->columns(1);
@@ -42,7 +58,16 @@ class OrderResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('id')
+                    ->label('ID'),
+                Tables\Columns\TextColumn::make('user.name')
+                    ->label('Nama Pelanggan'),
+                Tables\Columns\TextColumn::make('status')
+                    ->label('Status')
+                    ->badge(),
+                Tables\Columns\TextColumn::make('payment.amount')
+                    ->label('Total Pembayaran')
+                    ->money('IDR')
             ])
             ->filters([
                 //
