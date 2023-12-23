@@ -83,7 +83,8 @@
                     <nav class="navbar">
                         <ul class="navbar-links">
                             <li class="navbar-dropdown text-darkm8">
-                                <a class="{{ Request::routeIs('homepage') ? 'active' : '' }}" href="{{route('homepage')}}">Home</a>
+                                <a class="{{ Request::routeIs('homepage') ? 'active' : '' }}"
+                                   href="{{route('homepage')}}">Home</a>
                                 {{-- <div class="dropdown">
                                   <a href="index.html">home 1</a>
                                   <a href="index-2.html">home 2</a>
@@ -91,7 +92,8 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a class="{{ Request::routeIs('about-us') ? 'active' : '' }}" href="{{route('about-us')}}">About Us</a>
+                                <a class="{{ Request::routeIs('about-us') ? 'active' : '' }}"
+                                   href="{{route('about-us')}}">About Us</a>
                                 {{-- <div class="dropdown">
                                   <a href="menu-1.html">Menu 1</a>
                                   <a href="menu-2.html">Menu 2</a>
@@ -99,7 +101,8 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a class="{{ Request::routeIs('menu.index') ? 'active' : '' }}" href="{{route('menu.index')}}">Menu</a>
+                                <a class="{{ Request::routeIs('menu.index') ? 'active' : '' }}"
+                                   href="{{route('menu.index')}}">Menu</a>
 
                                 {{-- <div class="dropdown">
                                   <a href="shop.html">our product</a>
@@ -109,21 +112,34 @@
                                 </div> --}}
                             </li>
                             <li class="navbar-dropdown">
-                                <a class="{{ Request::routeIs('partnership') ? 'active' : '' }}" href="{{route('partnership')}}">Partnership</a>
+                                <a class="{{ Request::routeIs('partnership') ? 'active' : '' }}"
+                                   href="{{route('partnership')}}">Partnership</a>
 
                             </li>
 
                             <li class="navbar-dropdown">
-                                <a class="{{ Request::routeIs('contact-us') ? 'active' : '' }}" href="{{route('contact-us')}}">Contact</a>
+                                <a class="{{ Request::routeIs('contact-us') ? 'active' : '' }}"
+                                   href="{{route('contact-us')}}">Contact</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
                 <div class="col-lg-3">
-                    <div class="hamburger-icon">
-                        <livewire:cart-widget-component />
-                        <a href="contact.html" class="button">Contact Us</a>
-                    </div>
+                    @auth
+                        <div class="hamburger-icon">
+                            <livewire:cart-widget-component/>
+                            <form action="{{route('auth.logout')}}" method="POST">
+                                @csrf
+                                <button class="button">Logout</button>
+                            </form>
+                        </div>
+                    @endauth
+                    @guest
+                       <div class="hamburger-icon">
+                           <a href="{{route('auth.index')}}" class="button">Login</a>
+                       </div>
+                    @endguest
+
                 </div>
             </div>
         </div>
@@ -137,14 +153,14 @@
             </a>
         </div>
         <ul>
-            <li class="menu-item-has-children"><a href="/home">Home</a>
+            <li class="menu-item-has-children"><a href="{{route('homepage')}}">Home</a>
                 <ul class="sub-menu">
                 </ul>
             </li>
-            <li class="menu-item-has-children"><a href="/aboutus">about us</a></li>
-            <li class="menu-item-has-children"><a href="/menu">menus</a></li>
-            <li class="menu-item-has-children"><a href="/partnership">partnership</a></li>
-            <li class="menu-item-has-children"><a href="/contactus">contact us</a></li>
+            <li class="menu-item-has-children"><a href="{{route('about-us')}}">about us</a></li>
+            <li class="menu-item-has-children"><a href="{{route('menu.index')}}">menus</a></li>
+            <li class="menu-item-has-children"><a href="{{route('partnership')}}">partnership</a></li>
+            <li class="menu-item-has-children"><a href="{{route('contact-us')}}">contact us</a></li>
         </ul>
     </div>
 </header>
