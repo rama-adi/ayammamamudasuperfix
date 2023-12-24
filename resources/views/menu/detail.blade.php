@@ -1,4 +1,4 @@
-<x-homepage-layout>
+<x-homepage-layout :title="$menu->name">
     <section class="gap featured-dishes-product-detail-img">
         <div class="container">
             <div class="row align-items-center">

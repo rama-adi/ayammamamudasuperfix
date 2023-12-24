@@ -17,7 +17,7 @@
                             </ul>
                             <a href="{{route('menu.detail', $menu)}}"><h5>{{ $menu->name }}</h5></a>
                             <p><span>{{$menu->formattedPrice}}</span></p>
-                            <a href="#">
+                            <a href="{{route('menu.detail', $menu)}}">
                                 <i>
                                     <svg enable-background="new 0 0 512 512" viewBox="0 0 512 512"
                                          xmlns="http://www.w3.org/2000/svg">

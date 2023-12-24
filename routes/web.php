@@ -18,6 +18,22 @@ Route::view('/about-us', 'about-us')->name('about-us');
 Route::view('/partnership', 'partnership')->name('partnership');
 Route::view('/contact-us', 'contact-us')->name('contact-us');
 
+Route::get('/auth', [\App\Http\Controllers\AuthController::class, 'index'])
+    ->middleware('guest')
+    ->name('auth.index');
+
+Route::post('/auth/register', [\App\Http\Controllers\AuthController::class, 'register'])
+    ->middleware('guest')
+    ->name('auth.register');
+
+Route::post('/auth/login', [\App\Http\Controllers\AuthController::class, 'login'])
+    ->middleware('guest')
+    ->name('auth.login');
+
+Route::post('/auth/logout', [\App\Http\Controllers\AuthController::class, 'logout'])
+    ->middleware('auth')
+    ->name('auth.logout');
+
 Route::get('/checkout', [\App\Http\Controllers\CheckoutController::class, 'show'])
     ->middleware('auth')
     ->name('checkout');
